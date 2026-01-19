@@ -3,7 +3,7 @@ hidden = [".config", "target", "frontend/node_modules", "frontend/dist"]
 
 
 [nix]
-channel = "stable-24_05"
+channel = "stable-23_11"
 
 [deployment]
 build = ["sh", "-c", "cd frontend && npm install && npm run build && cd .. && mvn clean package"]
