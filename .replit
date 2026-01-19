@@ -1,8 +1,9 @@
 run = "bash start.sh"
 hidden = [".config", "target", "frontend/node_modules", "frontend/dist"]
 
+
 [nix]
-channel = "stable-23_11"
+channel = "stable-24_05"
 
 [deployment]
 build = ["sh", "-c", "cd frontend && npm install && npm run build && cd .. && mvn clean package"]
